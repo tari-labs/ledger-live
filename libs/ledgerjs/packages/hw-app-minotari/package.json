@@ -1,0 +1,40 @@
+{
+  "name": "@ledgerhq/hw-app-minotari",
+  "version": "0.0.1",
+  "description": "Ledger hardware wallet MinoTari API",
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf lib lib-es",
+    "build": "tsc && tsc -m ES6 --outDir lib-es",
+    "prewatch": "pnpm build",
+    "watch": "tsc --watch",
+    "lint": "eslint ./src --no-error-on-unmatched-pattern --ext .ts,.tsx --cache",
+    "lint:fix": "pnpm lint --fix"
+  },
+  "keywords": [
+    "Ledger",
+    "LedgerWallet",
+    "Tari",
+    "MinoTari"
+  ],
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/MinoTari.js",
+  "module": "lib-es/MinoTari.js",
+  "types": "lib/MinoTari.d.ts",
+  "devDependencies": {
+    "@ledgerhq/hw-transport-mocker": "workspace:^",
+    "@ledgerhq/hw-transport-webhid": "workspace:^",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.7",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-transport": "workspace:^"
+  }
+}
