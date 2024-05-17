@@ -1,7 +1,13 @@
 import Transport from "@ledgerhq/hw-transport";
 
 export default class MinoTari {
-  constructor(private transport: Transport) {}
+  constructor(
+    private transport: Transport,
+    scrambleKey = "Min0Tar",
+  ) {
+    // Lock device around methods & check if already locked
+    this.transport.decorateAppAPIMethods(this, ["getAppConfiguration"], scrambleKey);
+  }
 
   /**
    * Retrieves device App version and configuration
