@@ -4266,6 +4266,27 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
       },
     ],
   },
+  tari: {
+    type: "CryptoCurrency",
+    id: "tari",
+    coinType: CoinType.STRATIS,
+    name: "MinoTari",
+    managerAppName: "MinoTari",
+    ticker: "TARI",
+    scheme: "tari",
+    color: "#0000ff",
+    family: "tari",
+    units: [
+      { name: "MinoTari", code: "XTM", magnitude: 6 },
+      { name: "microMinoTari", code: "uXTM", magnitude: 0 },
+    ],
+    explorerViews: [
+      {
+        tx: "https://textexplore-nextnet.tari.com/blocks/$hash",
+        // TODO: Add required endpoints to our explorer
+      },
+    ],
+  },
   // Keep it at the bottom
   // Tickers dup
   binance_beacon_chain: {
