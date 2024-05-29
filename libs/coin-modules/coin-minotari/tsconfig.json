@@ -5,7 +5,7 @@
       "declarationMap": true,
       "module": "commonjs",
       "downlevelIteration": true,
-      "lib": ["es2020", "dom"],
+      "lib": ["es2022"],
       "rootDir": "./src",
       "outDir": "lib"
     },
