@@ -9,7 +9,7 @@ export function getTipMetadata(client: BaseNodeClient): Promise<MetaData> {
             if (error) {
                 reject(new NetworkError(error.message));
             } else if (response.metadata == null) {
-                reject(new NetworkError('No tipmetadata provided'));
+                reject(new NetworkError('No tip metadata provided'));
             } else {
                 resolve(response.metadata);
             }
