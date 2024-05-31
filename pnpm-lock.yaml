@@ -1971,6 +1971,9 @@ importers:
       '@grpc/grpc-js':
         specifier: ^1.10.8
         version: 1.10.8
+      '@ledgerhq/errors':
+        specifier: workspace:^
+        version: link:../../ledgerjs/packages/errors
       long:
         specifier: ^5.2.3
         version: 5.2.3

@@ -5,3 +5,4 @@ import { APIConfiguration } from "./config";
 export function createGRPCClient(config: APIConfiguration) {
   return new BaseNodeClient(config.endpoint, credentials.createInsecure());
 }
+

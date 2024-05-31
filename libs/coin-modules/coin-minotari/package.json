@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.10.8",
+    "@ledgerhq/errors": "workspace:^",
     "long": "^5.2.3",
     "protobufjs": "7.2.5"
   }
