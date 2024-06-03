@@ -1,4 +1,3 @@
-import Long from "long";
 import { BaseNodeClient, MetaData } from "../proto/base_node";
 import { Empty } from "../proto/types";
 import { NetworkError } from "@ledgerhq/errors";

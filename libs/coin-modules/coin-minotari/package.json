@@ -8,7 +8,7 @@
     "build": "tsc && tsc -m ES6 --outDir lib-es",
     "prewatch": "pnpm build",
     "watch": "tsc --watch",
-    "lint": "eslint ./src --no-error-on-unmatched-pattern --ext .ts,.tsx --cache",
+    "lint": "eslint --cache ./src",
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --write \"./**/*.ts\"",
     "format:check": "prettier --check \"./**/*.ts\""
