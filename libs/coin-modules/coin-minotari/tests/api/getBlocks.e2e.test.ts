@@ -7,7 +7,7 @@ import { Block, HistoricalBlock } from "../../src/proto/block";
 describe("GetBlocksFlow", () => {
   it("retrieves blocks", async () => {
     const client = createGRPCClient({
-        endpoint: "3.248.103.200:18142"
+        endpoint: "63.35.51.217:18142"
     });
 
     const height = await new Promise<Long | undefined>((resolve, reject) => {
